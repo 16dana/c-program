@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+   int data;
+   struct node *nxt;
+}*h=NULL,*t=NULL,*n=NULL;
+void ins();
+int display();
+int p=0;
+int main()
+{
+    
+    int a=1;
+   
+    while(a)
+    {
+        int c;
+         printf("\npress 1 to insert the element");
+        scanf("%d",&c);
+        switch(c)
+        {
+            case 1 :
+                 ins();
+                 break;
+            
+        }
+        printf("exit press 0");
+        
+        scanf("%d",&a);
+        
+        
+    }
+}
+    void ins()
+    {
+        
+        n=(struct node *)malloc(sizeof(struct node));
+        scanf("%d",&n->data);
+        n->nxt=NULL;
+        if(p==0)
+        {
+            h=n;
+            t=h;
+            p=1;
+        }
+        else
+        {
+            t->nxt=n;
+            n->nxt=h;
+            t=n;
+        }
+    }
