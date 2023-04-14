@@ -1,2 +1,2 @@
 # c-program
-The programs i practiced in c program are 
+This repository is to upload c program i practised while learning the programming and data structures.
